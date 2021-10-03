@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../../fonts/Gilroy-Light.otf") format("otf"),
+         url("../../fonts/Gilroy-ExtraBold.otf") format("otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy,'Stick No Bills', sans-serif;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+
+.header__Toggle{
+    max-width: 60px;
+    cursor: pointer;
+}
+
+.header__Logo{
+    max-width: 120px;
+}
+
+.header__Logo img, .header__Toggle img{
+    max-width: 100%;
+}
+
+.header__Nav{
+    display: none;
+}
+
+.header__Nav.active{
+    display: inline;
+    animation-name: navShow;
+    animation-duration: 0.5s;
+}
+@keyframes navShow {
+    0%   {opacity: 0.3;}
+    50%  {opacity: 0.6;}
+    100% {opacity: 1;}
+}
+
+.header__Nav--List{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header__NavList--Route{
+    letter-spacing: 0.1em;
+    margin-left: 40px;
+}
+
+.header__NavListRoute--Link{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: large;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    background: url("../img/Banner/background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner__Content{
+    max-width: 550px;
+}
+
+.banner__Content--Logo{
+    position: relative;
+    right: 25px;
+}
+
+.banner__Content--Title{
+    font-family: 'Stick No Bills', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    color: #fff;
+    cursor: context-menu;
+}
+
+.banner__Content--Title span{
+    font-weight: 800;
+}
+
+.banner__Content--Description{
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 15px 0 35px;
+    cursor: context-menu;
+}
+
+.banner__Content--Play{
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    filter: opacity(0.5);
+}
+
+.banner__Content--Play:hover{
+    filter: opacity(1);
+}
+
+.banner__ContentPlay--Img{
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.banner__Content--Social{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner__ContentSocial--Red{
+    list-style: none;
+}
+
+.banner__ContentSocialRed--Link{
+    text-decoration: none;
+}
+
+.banner__ContentSocialRedLink--Img{
+    filter: invert(1);
+    transform: scale(0.6);
+}
+
+.banner__Content--Slide{
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 250px / 2);
+    width: 250px;
+    height: 150px;
+    background: url('../img/Banner/rickandmorty.jpg');
+    background-size: cover;
+    cursor: pointer;
+    animation: animate 25s linear infinite;
+}
+
+@keyframes animate {
+    0%,100%{
+        background-position: top;
+    }
+    45%,55%{
+        background-position: bottom;
+    }
+}
+
+.trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    background: rgba(0,0,0,0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer__Video{
+    max-width: 900px;
+    outline: none;
+}
+
+.trailer__Close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-image: linear-gradient(to bottom right, #03022C, #08047C);
+    justify-content: space-evenly;
+    min-height: 10vh;
+}
+
+.footer__Sections--Pages{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer__SectionsPages--List{
+    margin: 10px;
+}
+
+.footer__SectionsPagesList--Route{
+    text-decoration: none;
+    color: #4C2581;
+    font-weight: 700;
+}
+
+.footer__SectionsPagesList--Route:hover{
+    color: #fff;
+}
+
+.footer__Copy{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__Copy--Message{
+    color: #4C2581;
+    font-weight: 700;
+    cursor: context-menu;
+}

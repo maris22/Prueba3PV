@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- META VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <!--FUENTES-->
+    <!--Stick No Bills-->
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+    <!--PT Sans-->
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/fonts.css">
+
+    <title>Rick y Morty | HBO Max</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="./index.html" class="header__Logo">
+
+            <img src="./assets/img/Header/logoHBOMAX.png" alt="Logo Rick Y Morty">
+
+        </a>
+
+        <div class="header__Nav">
+
+            <ul class="header__Nav--List">
+
+                <li class="header__NavList--Route">
+
+                    <a href="./index.html" class="header__NavListRoute--Link">INICIO</a>
+
+                </li>
+
+                <li class="header__NavList--Route">
+
+                    <a href="./pages/serie.html" class="header__NavListRoute--Link">SERIE</a>
+
+                </li>
+
+                <li class="header__NavList--Route">
+
+                    <a href="./pages/detalles.html" class="header__NavListRoute--Link">DETALLES</a>
+
+                </li>
+
+                <li class="header__NavList--Route">
+
+                    <a href="./pages/inscripcion.html" class="header__NavListRoute--Link">INSCRIPCIÓN</a>
+
+                </li>
+
+                <li class="header__NavList--Route">
+
+                    <a href="./pages/nosotros.html" class="header__NavListRoute--Link">NOSOTROS</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="header__Toggle">
+
+            <img src="./assets/img/Header/toggle.png" alt="Toggle Menú" onclick="toggleNav()">
+
+        </div>
+
+    </header>
+
+    <main class="banner">
+
+        <div class="banner__Content">
+
+            <img src="./assets/img/Banner/logoRM.png" alt="Logo Rick y Morty" class="banner__Content--Logo">
+
+            <h2 class="banner__Content--Title">WUBBA <span>LUBBA</span> DUB-DUB</h2>
+
+            <p class="banner__Content--Description">Esta animación enseña a respetar a los mayores, aún si se trata de un alcohólico peligroso, 
+                delirante, que vive una realidad paralela y que... Es tu propio abuelo. El viejo en cuestión es Rick, un 
+                científico loco cuya vida pasa entre viajes intergalácticos y los universos alternativos. Y que resulta una influencia 
+                irresistible para su nieto Morty, un adolescente solitario y, para qué negarlo, de muy pocas luces.
+            </p>
+
+            <a href="#" class="banner__Content--Play" onclick="toggleTrailer();">
+
+                <img src="./assets/img/Banner/play.png" alt="Play" class="banner__ContentPlay--Img">
+                Ver Tráiler
+
+            </a>
+
+            <a href="./pages/serie.html">
+
+                <div class="banner__Content--Slide">
+
+                </div>
+
+            </a>
+
+            <ul class="banner__Content--Social">
+
+                <li class="banner__ContentSocial--Red">
+
+                    <a href="https://www.facebook.com/HBOMaxLa/" target="_blank" class="banner__ContentSocialRed--Link">
+
+                        <img src="./assets/img/Redes/facebook.png" alt="Facebook" class="banner__ContentSocialRedLink--Img">
+
+                    </a>
+
+                </li>
+
+                <li class="banner__ContentSocial--Red">
+
+                    <a href="https://www.instagram.com/hbomax/?hl=es-la" target="_blank" class="banner__ContentSocialRed--Link">
+
+                        <img src="./assets/img/Redes/instagram.png" alt="Instagram" class="banner__ContentSocialRedLink--Img">
+
+                    </a>
+
+                </li>
+
+                <li class="banner__ContentSocial--Red">
+
+                    <a href="https://twitter.com/hbomax?lang=es" target="_blank" class="banner__ContentSocialRed--Link">
+
+                        <img src="./assets/img/Redes/twitter.png" alt="Twitter" class="banner__ContentSocialRedLink--Img">
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </main>
+
+    <div class="trailer">
+
+        <video class="trailer__Video" src="./assets/video/trailer.mp4" controls="true"></video>
+
+        <img class="trailer__Close" src="./assets/img/Banner/close.png" alt="Close" onclick="toggleTrailer();">
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer__Sections">
+
+            <ul class="footer__Sections--Pages">
+
+                <li class="footer__SectionsPages--List">
+
+                    <a href="" class="footer__SectionsPagesList--Route">Privacidad</a>
+
+                </li>
+
+                <li class="footer__SectionsPages--List">
+
+                    <a href="" class="footer__SectionsPagesList--Route">Términos de uso</a>
+
+                </li>
+
+                <li class="footer__SectionsPages--List">
+
+                    <a href="" class="footer__SectionsPagesList--Route">Anuncios de prensa</a>
+
+                </li>
+
+                <li class="footer__SectionsPages--List">
+
+                    <a href="" class="footer__SectionsPagesList--Route">Contactos de prensa</a>
+
+                </li>
+
+                <li class="footer__SectionsPages--List">
+
+                    <a href="" class="footer__SectionsPagesList--Route">Administrar las preferencias</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer__Copy">
+
+            <p class="footer__Copy--Message">© 2021 WarnerMedia Direct Latin America, LLC. Todos los derechos reservados #API. HBO Max se usa bajo licencia.</p>
+
+        </div>
+
+    </footer>
+
+    <!--SCRIPT-->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

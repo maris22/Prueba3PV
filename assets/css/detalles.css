@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../../fonts/Gilroy-Light.otf") format("otf"),
+         url("../../fonts/Gilroy-ExtraBold.otf") format("otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy,'Stick No Bills', sans-serif;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+
+.header__Toggle{
+    max-width: 60px;
+    cursor: pointer;
+}
+
+.header__Logo{
+    max-width: 120px;
+}
+
+.header__Logo img, .header__Toggle img{
+    max-width: 100%;
+}
+
+.header__Nav{
+    display: none;
+}
+
+.header__Nav.active{
+    display: inline;
+    animation-name: navShow;
+    animation-duration: 0.5s;
+}
+@keyframes navShow {
+    0%   {opacity: 0.3;}
+    50%  {opacity: 0.6;}
+    100% {opacity: 1;}
+}
+
+.header__Nav--List{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header__NavList--Route{
+    letter-spacing: 0.1em;
+    margin-left: 40px;
+}
+
+.header__NavListRoute--Link{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: large;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-image: linear-gradient(to bottom right, #03022C, #08047C);
+    justify-content: space-evenly;
+    min-height: 10vh;
+}
+
+.footer__Sections--Pages{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer__SectionsPages--List{
+    margin: 10px;
+}
+
+.footer__SectionsPagesList--Route{
+    text-decoration: none;
+    color: #4C2581;
+    font-weight: 700;
+}
+
+.footer__SectionsPagesList--Route:hover{
+    color: #fff;
+}
+
+.footer__Copy{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__Copy--Message{
+    color: #4C2581;
+    font-weight: 700;
+    cursor: context-menu;
+}
+
+
+
+
+
+
+
+body {
+scroll-behavior: smooth;
+background-image: linear-gradient( rgb(3, 3, 82),#572680);
+}
+
+.bannerDetalles{
+    position: relative;
+    margin-top: 100px;
+}
+
+
+h1{
+    
+    background-color: rgb(31, 12, 61);
+    color: white;
+    width: 100%;
+    font-size: 50px;
+    
+}
+#sectionImg{
+   
+    margin: 0px;
+    width:100%;
+    height: 50%;
+
+}
+
+.centradoPerfecto{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.responsive{
+    width: auto;
+    height: auto;
+    border-radius: 100px;
+    margin-top: 25px;
+
+
+}
+
+#FechaYHora{
+    background-color:#36197a ;
+    color: white;
+    width: 100%;
+    height: 111px;
+    padding-left: 30px;
+    display: inline-block;
+    
+    border-radius: 5%;
+    border-style: groove;
+    border-color: rgb(152, 156, 156);
+    margin: 25px;
+    
+
+}
+#Direccion{
+    background-color: #36197a;
+    color: white;
+    width: 100%;
+    height: 111px;
+    padding-left: 30px;
+    display: inline-block;
+    border-radius: 5%;
+    border-style: groove;
+    border-color: rgb(152, 156, 156);
+    margin: 25px;
+
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+section h2{
+    text-decoration:underline;
+    font-size:2em;
+    color:white;
+}
+section p{
+    font-size: 25px;
+}
+article{
+    margin: 25px;
+}
+
+
+#mapasYTransportes{
+    background-color: rgb(152, 156, 156);
+    width:50%;
+    height:auto;
+    
+}
+article h2{
+    text-decoration:underline;
+}
+#LinksTransportes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:white;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    transition: all .1s;
+}
+#LinksTransportes:hover{
+    background-color: #cdaae9;
+    color: black;
+}
+#LinksTransportes:active{
+    background-color: rgb(157, 157, 240);
+    color: white;
+
+    width: 95px;
+    height: 25px;
+}
+
